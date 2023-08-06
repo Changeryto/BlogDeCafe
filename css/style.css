@@ -414,6 +414,8 @@ header {
  margin: -5rem auto 0 auto; /*Hacia arriba, sentido horario*/
  width: 95%;
  padding: 5rem;
+ display: grid;
+ overflow: hidden;
  
 }
 
@@ -430,13 +432,17 @@ header {
 }
 
 .campo__field {
-    flex: 1; /*Se extiende al resto de espacio ya que el label es flex: 0*/
+    width: 100%;
     border: 1px solid var(--gris);
+    flex: 1; /*Se extiende al resto de espacio ya que el label es flex: 0*/
 }
+
+
 
 .campo__field--textarea {
     height: 20rem;
-
+    resize: none;
 }
+
 
 /*Fin Formulario*/
